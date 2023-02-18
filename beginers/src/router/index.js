@@ -18,7 +18,7 @@ const router = createRouter({
     {
       path: '/input',
       name: 'input',
-      component: () => import('../views/OnInput.vue')
+      component: () => import('../views/vModel.vue')
     },
   ]
 })
