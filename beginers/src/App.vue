@@ -3,6 +3,7 @@
       <div id="nav">
         <router-link  to="/">v-bind</router-link>
         <router-link  to="/about">Schotchik</router-link>
+        <router-link  to="/input">on-input</router-link>
       </div>
       <router-view/>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello About</h1>
+    <h1>Hello chotchi</h1>
     <div>
       <h1>{{ tasbeh }}</h1>
     </div>
