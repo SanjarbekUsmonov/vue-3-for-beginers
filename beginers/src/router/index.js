@@ -20,6 +20,11 @@ const router = createRouter({
       name: 'input',
       component: () => import('../views/vModel.vue')
     },
+    {
+      path: '/for',
+      name: 'for',
+      component: () => import('../views/vFor.vue')
+    },
   ]
 })
 
