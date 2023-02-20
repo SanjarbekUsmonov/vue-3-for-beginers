@@ -25,6 +25,11 @@ const router = createRouter({
       name: 'for',
       component: () => import('../views/vFor.vue')
     },
+    {
+      path: '/vif',
+      name: 'vif',
+      component: () => import('../views/vIf.vue')
+    },
   ]
 })
 
