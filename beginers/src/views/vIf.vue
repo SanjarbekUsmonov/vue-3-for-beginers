@@ -20,6 +20,12 @@
       voluptas. Repellat blanditiis, laboriosam magni optio dicta laudantium
       accusantium debitis.
     </div>
+    <div v-show="showText">
+      Sanjar ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi
+      provident, fugiat harum quam assumenda debitis hic omnis dicta nobis
+      voluptas. Repellat blanditiis, laboriosam magni optio dicta laudantium
+      accusantium debitis.
+    </div>
   </div>
 </template>
 
