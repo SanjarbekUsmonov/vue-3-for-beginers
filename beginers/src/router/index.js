@@ -30,6 +30,11 @@ const router = createRouter({
       name: 'vif',
       component: () => import('../views/vIf.vue')
     },
+    {
+      path: '/comp',
+      name: 'comp',
+      component: () => import('../views/computed.vue')
+    },
   ]
 })
 

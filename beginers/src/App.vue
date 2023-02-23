@@ -6,6 +6,7 @@
         <router-link  to="/input">v-model</router-link>
         <router-link  to="/for">v-for</router-link>
         <router-link  to="/vif">v-if</router-link>
+        <router-link  to="/comp">computed</router-link>
       </div>
       <router-view/>
   </div>
