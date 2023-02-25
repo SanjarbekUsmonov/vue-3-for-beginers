@@ -4,13 +4,16 @@
         <div>
             <input type="text" 
             v-bind:placeholder="inputValue"
-            v-model="inputModel" 
+            v-model="inputModel"
+            @keypress.enter="keypresInput()" 
             >
-           <ul>
+           <ul v-if="newArray.length !== 0">
              <li v-for="(array,index) in newArray" :key="index">{{ array }}
-             <button>x</button>
+             <button @click="clickBtn(index)">x</button>
             </li>
          </ul>
+         <div v-else>Hech narsa qolmadi</div>
+         {{ numberArray }}
         </div>
     </div>
 </template>
@@ -24,6 +27,20 @@
                 newArray:["bir","ikki","uch","tort","besh"]
             }
         },
+        methods: {
+            clickBtn(index){
+                this.newArray.splice(index,1)
+            },
+            keypresInput(){
+                this.newArray.push(this.inputModel)
+                this.inputModel = ""
+            }
+        },
+        computed:{
+           numberArray(){
+             return this.newArray.length * 5
+           }
+        }
     }
 </script>
 
