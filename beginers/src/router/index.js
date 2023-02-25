@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'comp',
       component: () => import('../views/computed.vue')
     },
+    {
+      path: '/tak',
+      name: 'tak',
+      component: () => import('../views/Takrorlash.vue')
+    },
   ]
 })
 

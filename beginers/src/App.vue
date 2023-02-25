@@ -7,6 +7,7 @@
         <router-link  to="/for">v-for</router-link>
         <router-link  to="/vif">v-if</router-link>
         <router-link  to="/comp">computed</router-link>
+        <router-link  to="/tak">Takrorlash</router-link>
       </div>
       <router-view/>
   </div>

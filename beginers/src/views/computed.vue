@@ -48,7 +48,7 @@ export default {
      console.log('coolComputed',this.raqamlar.length * 5);
      return this.raqamlar.length * 5
     }
-    }
+ },
 };
 </script>
   
