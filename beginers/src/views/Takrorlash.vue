@@ -1,5 +1,80 @@
 <template>
   <div>
+      <h1>Hello Takrorlash</h1>
+      <div>
+       <input type="text" 
+       :placeholder="inputBind"
+        v-model="inputValue"
+        @keypress.enter="inputPush()"
+      >
+      <ul v-if="newArray.length !== 0">
+        <li v-for="(array,index) in newArray" :key="index">
+          {{ array }} 
+          <button @click="btnSplice(index)">x</button>
+        </li>
+      </ul>
+      <div v-else>
+          Hech narsa qolmaadi
+      </div>
+      {{ numberArray }}
+      </div>
+
+  </div>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        inputBind:"Bu yerga yozing",
+        inputValue:"",
+        newArray:['bir','ikki','uch','tort']
+      }
+    },
+    methods: {
+      btnSplice(index){
+        this.newArray.splice(index,1)
+      },
+      inputPush(){
+        this.newArray.push(this.inputValue)
+        this.inputValue = ""
+      },
+      
+    },
+    computed:{
+      numberArray(){
+       return this.newArray.length * 5
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <template>
+  <div>
     <h1>Hello Takrorlash</h1>
     <div>
       <input
@@ -47,7 +122,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-</style>
+</style> -->
 
 
 
