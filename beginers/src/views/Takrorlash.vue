@@ -53,11 +53,11 @@
 
 <style lang="css"  scoped>
 
-.button{
+ .button{
   position:relative;
   display:inline-block;
   margin:20px;
-}
+} 
 
 .button a{
   color:white;
@@ -106,8 +106,8 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-}
- 
+} 
+  
 </style>
 
 
