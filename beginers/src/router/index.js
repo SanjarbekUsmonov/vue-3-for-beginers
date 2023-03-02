@@ -40,6 +40,11 @@ const router = createRouter({
       name: 'tak',
       component: () => import('../views/Takrorlash.vue')
     },
+    {
+      path: '/wotch',
+      name: 'wotch',
+      component: () => import('../views/wotch.vue')
+    },
   ]
 })
 

@@ -8,6 +8,7 @@
         <router-link  to="/vif">v-if</router-link>
         <router-link  to="/comp">computed</router-link>
         <router-link  to="/tak">Takrorlash</router-link>
+        <router-link  to="/wotch">Wotch</router-link>
       </div>
       <router-view/>
   </div>

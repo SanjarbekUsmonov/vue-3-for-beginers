@@ -5,9 +5,10 @@
       <h1>{{ tasbeh }}</h1>
     </div>
     <div>
-      <button @click="orqaga()">Orqaga</button>
-      <button v-on:click="oldinga()">Oldinga</button>
+      <button  @click="orqaga()">Orqaga</button>
+      <button  @click="oldinga()">Oldinga</button>
     </div>
+    {{ number }}
   </div>
 </template>
 
@@ -15,7 +16,7 @@
 export default {
   data() {
     return {
-      tasbeh: "0",
+      tasbeh: 0,
     };
   },
   methods: {
